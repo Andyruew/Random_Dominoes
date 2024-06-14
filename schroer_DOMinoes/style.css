@@ -1,0 +1,66 @@
+.dominoes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.dominoe {
+  width: 150px;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: goldenrod;
+  box-shadow: 3px 3px;
+  margin: 1%;
+}
+
+hr {
+  height: 1px;
+  background-color: black;
+  width: 125px;
+  border: 1px solid black;
+}
+
+.dot {
+  background-color: black;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0 10px;
+  display: flex;
+}
+
+.section{
+  height: 150px;
+  display: flex;
+  padding: 5px;
+}
+
+.section1, .section2{
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.section3 {
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.section3 .dot:nth-child(1){
+  align-self: flex-start;
+}
+
+.section3 .dot:nth-child(3){
+  align-self: flex-end;
+}
+
+.section4, .section5, .section6 {
+justify-content: space-evenly;
+align-items: center;
+flex-wrap: wrap;
+align-content: space-evenly
+}
+
+.section5 .dot:nth-child(3){
+  margin-left: 40px;
+  margin-right: 40px;
+}
